@@ -1,13 +1,4 @@
-import {
-  Play,
-  Calendar,
-  Music,
-  Swords,
-  Users,
-  Mic2,
-  Trophy,
-  Pause,
-} from "lucide-react";
+import { Play, Swords, Users, Mic2, Trophy, Pause } from "lucide-react";
 import { useRef, useState } from "react";
 
 interface Service {

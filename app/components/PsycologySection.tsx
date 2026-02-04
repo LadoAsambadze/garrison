@@ -1,13 +1,7 @@
 import { Play, Pause, Heart, Shield, Users } from "lucide-react";
 import { useRef, useState } from "react";
 
-interface PsychologySectionProps {
-  scrollToSection?: (sectionId: string) => void;
-}
-
-export const PsychologySection = ({
-  scrollToSection,
-}: PsychologySectionProps) => {
+export const PsychologySection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 

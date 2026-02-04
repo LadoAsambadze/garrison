@@ -1,11 +1,7 @@
 import { Play } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-interface VideoSectionProps {
-  scrollToSection?: (sectionId: string) => void;
-}
-
-export const VideoSection = ({ scrollToSection }: VideoSectionProps) => {
+export const VideoSection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
