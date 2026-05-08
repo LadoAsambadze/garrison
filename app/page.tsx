@@ -1,13 +1,19 @@
-"use client";
-
-import { FightSection } from "./components/FightSection";
-import { PsychologySection } from "./components/PsycologySection";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import BeerMenu from "./components/BeerMenu";
+import OrderSection from "./components/OrderSection";
+import Location from "./components/Location";
+import Footer from "./components/Footer";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
-      <FightSection />
-      <PsychologySection />
-    </div>
+    <main className="min-h-screen bg-[#05102a]">
+      <Navbar />
+      <Hero />
+      <BeerMenu />
+      <OrderSection />
+      <Location />
+      <Footer />
+    </main>
   );
 }
